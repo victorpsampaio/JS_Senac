@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercicio 6</title>
+</head>
+<script type="text/javascript">
+	var nota = 0
+	function media()
+	{
+		nota = document.getElementById('valor1').value;
+		
+		if ( nota <= 5)
+		{
+			document.querySelector('p').innerHTML="Insuficiente";
+		}
+		 else if (nota <=9)
+		 {
+			 document.querySelector('p').innerHTML="Bom";
+		 }
+		 else if (nota == 10)
+		 {
+			 document.querySelector('p').innerHTML="Muito Bom";
+		 }
+			
+	}
+</script>
+<body>
+<input type="text" id="valor1" name="texto" />
+<button type="button" id="a" onClick="media()">Nota </button>
+<p>Resultado</p>
+</body>
+</html>

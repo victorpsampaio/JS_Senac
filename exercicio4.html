@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercicio 4</title>
+</head>
+<script type="text/javascript">
+var i = 0
+	function parImpar()
+	{
+		 i = document.getElementById('texto').value%2;
+		
+		if (i == 0)
+		{
+			document.querySelector('h3').innerHTML="O número é PAR";
+		}
+		else
+		{
+			document.querySelector('h3').innerHTML="O numero é IMPAR";	
+		}
+	}
+</script>
+<body>
+<h3>Resultado!</h3>
+<input type="text" id="texto" name="texto" />
+<button type="button" id="a" onClick="parImpar()">Veja se o resultado é Par ou Impar</button>
+</body>
+</html>

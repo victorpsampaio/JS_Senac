@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercicio 8</title>
+<script type="text/javascript">
+
+
+
+var torcidas = { 
+	"Corinthianos" :{"Masculino": 40, "Feminino": 10},
+	"Palmeirenses" :{"Masculino": 30, "Feminino": 5},
+	"São Paulinos" :{"Masculino": 36, "Feminino": 8},
+	"Santistas" :{"Masculino": 25, "Feminino": 2}
+};
+
+	function palmeiras()
+	{
+		var i = 0
+		i = torcidas.Palmeirenses.Masculino + torcidas.Palmeirenses.Feminino;
+		document.getElementById('p1').innerHTML="Total de torcedores palmeirenses: " + i;
+	}
+
+	function mulheres()
+	{
+		var x = 0	
+		x = torcidas.Corinthianos.Feminino + torcidas.Palmeirenses.Feminino + torcidas.Santistas.Feminino;
+		document.getElementById('p2').innerHTML="Total de torcedoras Corinthianas, Palmeirendes e Santistas: " + x
+	}
+
+	function alvinegros()
+	{
+		var y = 0 
+		y = torcidas.Corinthianos.Masculino + torcidas.Corinthianos.Feminino + torcidas.Santistas.Masculino + torcidas.Santistas.Feminino;
+		document.getElementById('p3').innerHTML="Total de torcedores Alvinegros: " + y;	
+	}
+
+
+</script>
+
+</head>
+
+<body>
+<table border="1">
+	<tr>
+    	<th>Torcidas</th><th>S_Masculino</th><th>S_Feminino</th>
+    </tr>
+    <tr>
+    	<td>Corinthianos</td><td align="right">40</td><td align="right">10</td>
+    </tr>
+    <tr>
+    	<td>Palmeirenses</td><td align="right">30</td><td align="right">5</td>
+    </tr>
+    <tr>
+    	<td>São Paulinos</td><td align="right">36</td><td align="right">8</td>
+    </tr>
+    <tr>
+    	<td>Santistas</td><td align="right">25</td><td align="right">2</td>
+    </tr> 
+
+<button type="button" id="botao1" onClick="palmeiras()">Clique!</button>
+<p id="p1">Total de torcedores palmeirenses: </p>
+<button type="button" id="botao2" onClick="mulheres()">Clique!</button>
+<p id="p2">Total de torcedoras Corinthianas, Palmeirendes e Santistas: </p>
+<button type="button" id="botao3" onClick="alvinegros()">Clique!</button>
+<p id="p3">Total de torcedores Alvinegros: </p>
+
+
+
+
+</body>
+</html>

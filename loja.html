@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercicio 10</title>
+<h1><img  src="./Imagem/foto.png" width="100" height="100"><br>
+	Apple Store
+ </h1>
+
+<hr />
+<script type="text/javascript" src="regra.js">
+</script>
+
+<style>
+	body{
+		background-color: #DDDDDD;
+		}
+	h1{
+		text-align: center;
+		}
+	div{
+		border: 1px solid black;
+		width:100%;
+		height:auto;
+		text-align: center;
+		
+		margin-top:30px;
+		}	
+	h2{
+		text-align:center;
+		}	
+	label{
+		font-size:20px;
+		}	
+		
+	#tabela{
+	font-size:17px;
+
+	margin-left:40%;
+	margin-top:30px;
+	}	
+</style>
+
+</head>
+
+<body>
+
+<div id="a">
+	<h2>CADASTRO PRODUTOS IMPORTADOS E NACIONAIS</h2>
+	<label>Nome do produto: </label>
+    <input type="text" name="produto" id="produto"/><br>
+    <label>Preço do produto: </label>
+    <input type="text" name="valor" id="valor"/><br><br>
+    <label> Origem: </label>
+    <input type="radio" name="in" id="in" value="0" ><label>Importado</label>
+   <input type="radio" name="in" id="in" value="1" ><label>Nacional</label><br><br>
+    <button type="button" name="Enviar" id="Enviar" onClick="valor()">Enviar</button> 
+    <button type="button" name="Exibir" id="Exibir" onClick="tabela();">Exibir</button>
+    
+     <table width="300" id="tabela" border="1"></table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercicio 9</title>
+<script type="text/javascript">
+	
+	var clientes = {
+		"João" : 8, "Manoel": 10, "Joaquim" : 4, "Maria": 4, "Julio": 11, "Mário": 9,"Patricia": 3, "Carolina": 7 , "Ana": 6
+	}
+	var x = 0
+	var nome =""
+	while (x <=48)
+	{
+		if (x <=48)
+		{
+			x = clientes.João + x;
+			nome = "João";
+		}
+		if (x <=48)
+		{
+			x = clientes.Manoel + x;
+			nome = "Manoel";
+		}
+		if (x <=48)
+		{
+			x = clientes.Joaquim + x;
+			nome = "Joaquim";
+		}
+		if (x<=48)
+		{
+			x = clientes.Maria + x;
+			nome = "Maria";
+		}
+		 if (x<=48)
+		{
+			x = clientes.Julio + x;
+			nome = "Julio";
+		}
+		if (x<=48)
+		{
+			x = clientes.Mário + x;
+			nome = "Mário";
+		}
+		if (x<=48)
+		{
+			x = clientes.Patricia + x;
+			nome = "Patricia";
+		}
+		 if (x<=48)
+		{
+			x = clientes.Carolina + x;
+			nome = "Carolina";
+		}
+		if (x<=48)
+		{
+			x = clientes.Ana + x;
+			nome = "Ana";
+		}
+
+	}
+	
+	function final()
+	{
+		document.getElementById('p1').innerHTML= "Total de frutas vendidas: " + x	;
+		document.getElementById('p2').innerHTML="A ultima pessoa que foi feita a venda foi: " + nome;
+	}
+	
+</script>
+
+</head>
+
+<body>
+
+<p id="p2">A ultima pessoa que foi feita a venda foi: </p>
+<p id="p1">Total de frutas vendidas: </p>
+<button type="button" id="a" name="a" onClick="final()">Vendas!</button>
+
+</body>
+</html>

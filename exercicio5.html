@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercicio 5</title>
+</head>
+<script type="text/javascript">
+	function foco1()
+	{
+		alert('caixa de texto 1 selecionada')
+		}
+	function foco2()
+	{
+		alert('caixa de texto 2 selecionada')
+		}	
+	function blur1()
+	{
+		alert('caixa de texto 1 deselecionada')
+		}	
+	function blur2()
+	{
+		alert('caixa de texto 2 deselecionada')
+		}		
+</script>
+<body>
+<input type="text" id="valor1" name="texto" onFocus="foco1()" onBlur="blur1()" />
+<input type="text" id="valor2" name="texto" onFocus="foco2()" onBlur="blur2()" />
+
+</body>
+</html>
